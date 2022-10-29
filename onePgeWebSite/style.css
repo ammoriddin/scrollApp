@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+#asosiy{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+header{
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+}
+
+header nav{
+    margin-left: 6%;
+}
+
+h1{
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+li,
+ul{
+    display: inline-block;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: azure;
+    padding: 15px;
+    font-weight: 530;
+    transition: all .3s ease;
+}
+
+nav ul{
+    margin-left: 600px;
+}
+
+li a:hover{
+    color: rgb(14, 214, 131);
+    letter-spacing: 1.5px;
+}
+
+#biz-haqimizda{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 255, 115);
+    text-align: center;
+}
+
+#biz-haqimizda h1{
+    margin-top: 300px;
+}
+
+#blog{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 0, 100);
+    text-align: center;
+}
+
+#blog h1{
+    margin-top: 300px;
+}
+
+#subscribe{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4, 2, 24);
+    text-align: center;
+}
+
+#subscribe h1{
+    margin-top: 300px;
+}
