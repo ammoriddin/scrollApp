@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product,sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --fs-md: clamp(20px,1.1vw,25px);
+    --fs-sm: 0.8rem;
+    --fs-lg: 1.3rem;
+    --fs-xl: 2rem;
+    --mobile: 639px;
+    --tablet: 1047px;
+    --desktop: 1048px;
+    --c-darker-gray: #7b8793;
+}
+.light{
+    --h2-color:#d0e3ff;
+    --span-color:#d7ebff;
+    --c-blue: #002d70;
+    --c-green: green;
+    --c-white: #fff;
+    --c-black: #000;
+    --c-grey: #dcdfe4;
+    --c-lighblue: #0047b3;
+    --c-lightgrey: rgba(220,223,228,0.44);
+    --c-dark-gray: #353b41;
+    --filter-rec:invert(100%) sepia(11%) saturate(407%) hue-rotate(191deg) brightness(110%) contrast(81%);
+}
+.dark {
+    --h2-color:#e5f0ff;
+    --span-color:#cfd4d8;
+    --c-blue: #e5f0ff;
+    --c-green: #ff7fff;
+    --c-white: #00183d;
+    --c-black: #fff;
+    --c-grey: #011431;
+    --c-lighblue: #b3d1ff;
+    --c-lightgrey: #00183d;
+    --c-dark-gray: #cfd4d8;
+    --filter-rec: invert(15%) sepia(96%) saturate(4067%) hue-rotate(211deg) brightness(13%) contrast(101%);
+    --bac-col:#011431;
+}
+@keyframes  Main_spin__eVmvy{
+    0% {
+        -webkit-transform: rotate(
+    0deg
+    ) translateX(10px) rotate(
+    0deg
+    );
+        -moz-transform: rotate(0deg) translateX(10px) rotate(0deg);
+        transform: rotate(
+    0deg
+    ) translateX(10px) rotate(
+    0deg
+    );
+    }
+    
+    100% {
+        -webkit-transform: rotate(
+    1turn
+    ) translateX(10px) rotate(
+    -1turn
+    );
+        -moz-transform: rotate(1turn) translateX(10px) rotate(-1turn);
+        transform: rotate(
+    1turn
+    ) translateX(10px) rotate(
+    -1turn
+    );
+    }
+}
+
+.hight{
+    display: none;
+    transition: all .3s ease;
+}
+
+.show{
+    display: block;
+    transition: all .3s ease;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bac-col);
+    padding: 80px 0;
+}
+
+.btn{
+    color: var(--c-white);
+    background-color: var(--c-blue);
+    padding: 10px 40px;
+    font-size: var(--fs-md);
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 30px auto;
+    transition: all .7s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:hover{
+    transform: scale(1.07);
+}
+
+/* Navigation style */
+
+nav{
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    background-color: #00183d;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.103);
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    margin: 12px 0;
+}
+
+.logo a img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    right: -28px;
+    bottom: 2px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 22px 8px;
+    font-weight: bolder;
+    font-size: 14.5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--c-dark-gray);
+    transition: all .5s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--c-darker-gray);
+}
+
+.theme{
+    width: 35px;
+}
+
+.theme img {
+    width: 100%;
+    margin: 10px 0 10px 40px;
+    cursor: pointer;
+}
+
+/* /Navigation style */
+
+/* Asosiy section */
+
+#asosiy .container {
+    display: flex;
+}
+
+#asosiy .asosiy-title{
+    width: 40%;
+    padding: 10% 0;
+    text-align: center;
+}
+
+#asosiy .asosiy-title h2 {
+    font-weight: 550;
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--c-blue);
+    text-align: center;
+}
+
+#asosiy .asosiy-img{
+    width: 60%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#asosiy .asosiy-img img {
+    width: 550px;
+    animation: Main_spin__eVmvy 5s linear infinite reverse;
+}
+/* /Asosiy section */
+
+/* kurslar style */
+
+#kurslar{
+    position: relative;
+    z-index: 0.9;
+    display: inline-block;
+}
+
+
+#kurslar{
+    background-image: url(../Img/bg.svg);
+}
+
+body.light #kurslar {
+    filter: var(--filter-rec);
+}
+
+#kurslar .container{
+    text-align: center;
+}
+
+.nav-title{
+    text-align: center;
+    width: 100%;
+}
+
+.nav-title h2{
+    color: white;
+    z-index: 1500;
+}
+
+.kurs-title{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.kurs-box{
+    position: relative;
+    min-width: 300px;
+    text-align: center;
+    padding: 0 5px;
+    margin-bottom: 35px;
+    top: 30px;
+    margin: 0 auto;
+}
+
+.kurs-box img{
+    width: 90px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.kurs-box span{
+    color: var(--span-color);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* /kurslar style */
+
+/* Kurslarimiz style */
+
+#kurslarimiz{
+    text-align: center;
+}
+
+.kurslar-title{
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.kurslar-box{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid var(--c-white);
+    border-radius: 20px;
+    transition: all .7s ease;
+}
+
+.kurslar-box img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.kurslar-box:hover{
+    box-shadow: 0px 0px 4px 4px rgba(0 0 0 / 7%);
+    background-color: var(--c-white);
+    transform: scale(1.07);
+}
+
+/* /Kurslarimiz style */
+
+/* Media style */
+
+#media{
+    background-color: var(--bac-col);
+    text-align: center;
+    position: relative;
+    background-image: url(../Img/bg.svg);
+}
+
+.media-title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(300px,1fr);
+}
+
+body.light #media{
+    background-image: none;
+    background-color: rgba(220,223,228,0.44);
+}
+
+.media-box img{
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.media-box img:hover{
+    transform: scale(1.07);
+}
+
+/* /Media style */
+
+/* Jamoa style */
+
+#jamoa{
+    text-align: center;
+}
+
+#jamoa .container img{
+    margin-top: 50px;
+    max-width: 1300px;
+    width: 93%;
+    max-height: 68vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* /Jamoa style */
+
+/* Aloqa style */
+
+#aloqa {
+    background-color: var(--c-lightgrey);
+}
+
+#aloqa .container .aloqa-header{
+    width: 100%;
+    text-align: center;
+}
+
+#aloqa .container .aloqa-header img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.aloqa-body{
+    width: 100%;
+    display: flex;
+}
+
+.aloqa-body .box{
+    width: 33.3%;
+}
+
+.aloqa-body .box .row{
+    justify-content: start;
+    margin: 10px 0;
+}
+
+.aloqa-body .box .row img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.aloqa-body .box .row h3{
+    color: var(--c-dark-gray);
+    font-weight: 500;
+}
+
+.aloqa-body .box h3{
+    color: var(--c-dark-gray);
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.aloqa-body .box h2{
+    color: var(--c-dark-gray);
+}
+
+.aloqa-body .box ul{
+    margin-left: 20px;
+}
+
+.aloqa-body .box ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.aloqa-body .box ul li a,
+.aloqa-body .box a
+{
+    color: var(--c-dark-gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.aloqa-body .box ul li a:hover,
+.aloqa-body .box a:hover{
+    color: var(--c-darker-gray);
+}
+
+.aloqa-body .row{
+    display: flex;
+}
+
+.menu-img img {
+    display: none;
+}
+
+/* /Aloqa style */
+
+/* Responsive */
+
+@media (max-width: 1032px) {
+    #asosiy .container,
+    #kurslar .kurs-title,
+    #media .media-title{
+        display: block;
+    }
+    #asosiy .asosiy-title,
+    #asosiy .asosiy-img{
+        width: 100%;
+    }
+
+    #kurslar{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .kurs-box img{
+        width: 120px;
+        height: 120px;
+        margin: 20px auto;
+    }
+
+    .section{
+        padding: 80px 20px;
+    }
+
+    #media{
+        padding: 80px 50px;
+    }
+    
+    .media-box img{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .theme{
+        position: relative;
+        right: 80px;
+    }
+
+    #media{
+        background-size: cover;
+        padding: 200px 20px;
+    }
+
+    nav .container{
+        padding: 0 20px;
+    }
+
+    .menu-img img {
+        display: none;
+    }
+}
+
+body.light nav{
+    background-color: #dcdfe4;
+}
+
+@media (max-width: 747px) {
+    .aloqa-body{
+        display: block;
+    }
+    .aloqa-body .box{
+        width: 100%;
+    }
+
+    .aloqa-body .box:nth-child(3){
+        display: block;
+    }
+
+    .aloqa-body .box:nth-child(2){
+        margin-top: 20px;
+    }
+    
+    .aloqa-body .box:nth-child(3) .btn{
+        margin-left: 20px;
+    }
+
+    #asosiy .asosiy-title h2{
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .menu-img img {
+        display: none;
+    }
+}
+
+@media (max-width: 571px) {
+    .menu{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: -100vh;
+        background-color: var(--bac-col);
+        transition: all .7s ease;
+    }
+
+    #asosiy .asosiy-img img{
+        width: 300px;
+    }
+
+    .menu.active{
+        left: 0;
+        top: 0;
+        transition: all 0.7s ease-in-out;
+    }
+    body.light nav{
+        background-color: #dcdfe4;
+    }
+
+    body.light .menu-img img{
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .menu ul{
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .menu ul li{
+        margin-top: 30px;
+    }
+
+    .menu ul li a{
+        font-size: 30px;
+    }
+
+    body.light .menu.active{
+        background-color: white;
+    }
+
+    .menu-img{
+        display: block;
+        position: fixed;
+        right: 5%;
+    }
+
+    .menu-img .show {
+        display: block;
+        width: 30px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+}

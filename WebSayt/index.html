@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamIT.uz Clone</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+</head>
+<body class="dark">
+    
+    <!-- Navigation bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./Img/teamitlogo.png" class="logo-img show" alt="Logo"></a>
+                <a href="./index.html"><img src="./Img/teamitlogo_blue.png" class="logo-img-dark hight" alt="Logo"></a>
+            </div>
+
+            <div class="toggle">
+                <div class="menu" id="menu">
+                    <ul>
+                        <li><a id="menu-a" onclick="menuTextClick()" href="#asosiy">Asosiy</a></li>
+                        <li><a id="menu-a" onclick="menuTextClick()" href="#kurslarimiz">Kurslar</a></li>
+                        <li><a id="menu-a" onclick="menuTextClick()" href="#media">Media</a></li>
+                        <li><a id="menu-a" onclick="menuTextClick()" href="#jamoa">Jamoa</a></li>
+                        <li><a id="menu-a" onclick="menuTextClick()" href="#aloqa">Aloqa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="theme">
+                <img onclick="foo()" id="sun" src="./Img/sun.png" class="show" alt="light mode">
+                <img onclick="foo()" id="moon" src="./Img/moon-dark.png" class="hight" alt="dark mode">
+            </div>
+
+            <div class="menu-img">
+                <img onclick="menuClick()" src="./Img/menu.png" id="open" class="show" alt="menu">
+                <img onclick="menuClick()" src="./Img/close.png" id="close" class="hight" alt="close">
+            </div>
+
+        </div>
+    </nav>
+    <!-- /Navigation bar -->
+
+
+    <!-- Asosiy section -->
+    <section class="section" id="asosiy">
+        <div class="container">
+            <div class="asosiy-title">
+                <h2>Zamonaviy kasblarni biz bilan o'rganing!</h2>
+                <button class="btn"> Kurslarga Yoziling </button>
+            </div>
+
+            <div class="asosiy-img">
+                <img src="./Img/Img.svg" alt="WebDev">
+            </div>
+        </div>
+    </section>
+    <!-- /Asosiy section -->
+
+
+    <!-- Kurslar section -->
+    <section id="kurslar" class="section">
+        <div class="nav-title">
+            <h2>Teamit Academyda siz quyidagilarga ega bo'lasiz: </h2>
+        </div>
+        <div class="container">
+            <div class="kurs-title">
+                <div class="kurs-box">
+                    <img src="./Img/1.svg " alt="">
+                    <br>
+                    <span>Komputerlar bilan jihozlangan, qulay va shinam o'quv xonalari</span>    
+                </div>
+                <div class="kurs-box">
+                    <img src="./Img/2.svg " alt="">
+                    <br>
+                    <span>Zamonaviy metodlarga asoslangan yuqori sifatli ta'lim</span>    
+                </div>
+                <div class="kurs-box">
+                    <img src="./Img/3.svg " alt="">
+                    <br>
+                    <span>Soha mutaxassislarining yopiq seminar va vebinarlariga qatnashish imkoniyati</span>    
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kurs-title">
+                <div class="kurs-box">
+                    <img src="./Img/4.svg " alt="">
+                    <br>
+                    <span>Amaliyot yoki turli kompaniyalarda ish topishga ko'mak</span>    
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button type="button" class="btn">Batafsil</button>
+        </div>
+    </section>
+    <!-- /Kurslar section -->
+
+
+    <!-- Kurslarimiz section -->
+    <section id="kurslarimiz" class="section">
+        <div class="nav-title">
+            <h2>Kurslarimiz</h2>
+        </div>
+        <div class="container">
+            <div class="kurslar-title">
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/3ds.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/auto.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/foto.png" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/graphic.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/ofis.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/roboto.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/video.jpg" alt="3ds max">
+                </div>
+                <div class="kurslar-box">
+                    <img src="./Img/kurslar/web.jpg" alt="3ds max">
+                </div>
+            </div>
+        </div>
+        <button class="btn" type="button">Batafsil</button>
+    </section>
+    <!-- /Kurslarimiz section -->
+
+
+    <!-- Media section -->
+    <section id="media" class="section">
+        <div class="nav-title">
+            <h2>Media</h2>
+        </div>
+        <div class="container">
+            <div class="media-title">
+                <div class="media-box">
+                    <img src="./Img/Media/photo_1.jpg" alt="">
+                </div>
+                <div class="media-box">
+                    <img src="./Img/Media/photo_3.jpg" alt="">
+                </div>
+                <div class="media-box">
+                    <img src="./Img/Media/photo_4.jpg" alt="">
+                </div>
+                <div class="media-box">
+                    <img src="./Img/Media/photo_5.jpg" alt="">
+                </div>
+                <div class="media-box">
+                    <img src="./Img/Media/photo_6.jpg" alt="">
+                </div>
+                <div class="media-box">
+                    <img src="./Img/Media/photo_9.jpg" alt="">
+                </div>
+            </div>
+            <button type="button" class="btn">Batafsil</button>
+        </div>
+    </section>
+    <!-- /Media section -->
+
+    
+    <!-- Team section -->
+    <section id="jamoa" class="section">
+        <div class="nav-title">
+            <h2>Biz TeamIT JAmoasi</h2>
+        </div>
+        <div class="container">
+            <img src="./Img/Media/teamit.jpg" alt="">
+        </div>
+        <button type="button" class="btn">Batafsil</button>
+    </section>
+    <!-- /Team section -->
+
+
+    <!-- Aloqa section -->
+    <section id="aloqa" class="section">
+        <div class="container">
+            <div class="aloqa-header">
+                <img class="logo-img" src="./Img/teamitlogo.png" alt="logo">
+                <img class="logo-img-dark hight" src="./Img/teamitlogo_blue.png" alt="logo">
+            </div>
+            <br>
+            <div class="aloqa-body">
+                <div class="box">
+                    <h2>Aloqa</h2>
+                    <div class="row">
+                        <img src="./Img/phone.svg" alt="PhoneNumber">
+                        <h3>(33) 090 27 04</h3>
+                    </div>
+                    <div class="row">
+                        <img src="./Img/location.svg" alt="PhoneNumber">
+                        <h3>Manzil: Toshkent sh. Yunusobod t.</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li><a href="#kurslar">Biz haqimizda</a></li>
+                        <li><a href="#kurslarimiz">Kurslar</a></li>
+                        <li><a href="#media">Media</a></li>
+                        <li><a href="#jamoa">Jamoa</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a href="#">Vakansiya</a>
+                    <button type="button" class="btn">Kursga Yoziling!</button>
+                </div> 
+            </div>
+        </div>        
+    </section>
+    <!-- /Aloqa section -->
+
+    <script src="./Js/main.js"></script>
+</body>
+</html>
